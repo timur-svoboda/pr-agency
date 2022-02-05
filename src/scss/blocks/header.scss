@@ -1,7 +1,7 @@
 .header {
   position: absolute;
+  z-index: 100;
   width: 100%;
-  // .header__container
   &__container {
     @extend %container;
     display: flex;
@@ -9,7 +9,6 @@
     align-items: center;
     min-height: 80px;
   }
-  // .header__logo-wrapper
   &__logo-wrapper {
     flex: 0 0 147px;
     padding-top: 6px;
@@ -17,16 +16,11 @@
       margin-right: 20px;
     }
   }
-  // .header__logo-link
-  &__logo-link {
-  }
-  // .header__logo
   &__logo {
     display: block;
     width: 100%;
     height: auto;
   }
-  // .header__nav-wrapper
   &__menu-wrapper {
     flex: 1 1 auto;
     display: flex;
@@ -36,26 +30,22 @@
       padding-top: 10px;
     }
   }
-  // .header__nav
   &__nav {
     @media (max-width: $sm) {
       position: absolute;
       left: 0;
-      bottom: 1px;
-      // transform: translate(-100%, 100%);
-      transform: translateY(100%);
+      top: 0;
       height: 0;
-      overflow: hidden;
       width: 100%;
       background-color: $white;
+      overflow: hidden;
       transition: all 200ms ease;
       &_open {
-        // transform: translate(0, 100%);
+        padding-top: 80px;
         height: 100vh;
       }
     }
   }
-  // .header__burger-menu
   &__burger-menu {
     display: none;
     @media (max-width: $sm) {

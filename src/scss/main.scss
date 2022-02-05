@@ -8,12 +8,35 @@ $sm: 767.98px;
 $md: 991.98px;
 $lg: 1199.98px;
 $xl: 1399.98px;
+$safe-padding: 15px;
 
 // Container
 %container {
   max-width: 1330px;
-  padding: 0 15px;
+  padding: 0 $safe-padding;
   margin: 0 auto;
+  @media (max-width: $xl) {
+    max-width: $lg - 2 * $safe-padding;
+  }
+  @media (max-width: $lg) {
+    max-width: $md - 2 * $safe-padding;
+  }
+  @media (max-width: $md) {
+    max-width: $sm - 2 * $safe-padding;
+  }
+  @media (max-width: $sm) {
+    max-width: $xs - 2 * $safe-padding;
+  }
+  @media (max-width: $xs) {
+    max-width: none;
+  }
+}
+
+// Grid
+%grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
 }
 
 // Settings
@@ -29,7 +52,6 @@ body {
 }
 
 .wrapper {
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -40,6 +62,11 @@ body {
 }
 
 // Blocks
-@import "blocks/header.scss";
 @import "blocks/nav.scss";
 @import "blocks/burger-menu.scss";
+@import "blocks/title.scss";
+@import "blocks/arrow-link.scss";
+
+// Sections
+@import "blocks/header.scss";
+@import "blocks/tell-story.scss";

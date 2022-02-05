@@ -1,0 +1,27 @@
+.arrow-link {
+  display: inline-flex;
+  align-items: flex-start;
+  height: 46px;
+  font-size: 0;
+  text-decoration: none;
+  color: $black;
+  &:hover {
+    color: $orange;
+  }
+  &__text {
+    display: inline-block;
+    height: 35px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid $orange;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: capitalize;
+    transition: all 100ms ease;
+  }
+  &__arrow {
+    margin-left: 4px;
+    align-self: flex-end;
+    filter: invert(66%) sepia(53%) saturate(3593%) hue-rotate(325deg) brightness(99%) contrast(96%);
+  }
+}

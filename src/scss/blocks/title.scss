@@ -1,0 +1,12 @@
+.title {
+  margin: 0;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 58px;
+  line-height: 110%;
+  text-transform: capitalize;
+  color: $black;
+  &__accent {
+    color: $orange;
+  }
+}
