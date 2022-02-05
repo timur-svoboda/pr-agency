@@ -2,7 +2,9 @@
 $black: #0A2042;
 $orange: #F87556;
 $white: #FFFFFF;
+$gray: #F4F0ED;
 
+$xxs: 320px;
 $xs: 575.98px;
 $sm: 767.98px;
 $md: 991.98px;
@@ -39,6 +41,13 @@ $safe-padding: 15px;
   gap: 24px;
 }
 
+// Responsive image
+%responsive-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 // Settings
 html, 
 body {
@@ -66,7 +75,10 @@ body {
 @import "blocks/burger-menu.scss";
 @import "blocks/title.scss";
 @import "blocks/arrow-link.scss";
+@import "blocks/card-offer.scss";
 
 // Sections
 @import "blocks/header.scss";
 @import "blocks/tell-story.scss";
+@import "blocks/quote.scss";
+@import "blocks/offer.scss";
