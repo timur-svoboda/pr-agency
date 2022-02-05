@@ -1,6 +1,45 @@
-body {
-  background-color: #ff6347;
-  margin: 0;
+// Vars
+$black: #0A2042;
+$orange: #F87556;
+$white: #FFFFFF;
+
+$xs: 575.98px;
+$sm: 767.98px;
+$md: 991.98px;
+$lg: 1199.98px;
+$xl: 1399.98px;
+
+// Container
+%container {
+  max-width: 1330px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-@import "./blocks/header.scss";
+// Settings
+html, 
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: $black;
+  line-height: 159%;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+// Blocks
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/burger-menu.scss";

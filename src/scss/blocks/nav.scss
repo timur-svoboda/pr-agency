@@ -1,0 +1,40 @@
+.nav {
+  // .nav__list
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    @media (max-width: $sm) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  // .nav__item
+  &__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+      @media (max-width: $sm) {
+        margin-right: 0;
+      }
+    }
+  }
+  // .nav__link
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: $black;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    transition: color 200ms ease;
+    @media (max-width: $sm) {
+      min-width: 48px;
+      padding: 12px;
+    }
+    &:hover {
+      color: $orange;
+    }
+  }
+}

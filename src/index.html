@@ -4,11 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/libs/bootstrap-reboot/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <div class="wrapper">
-    <header class="header">Header</header>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo-wrapper">
+          <a href="/" class="header__logo-link"><img src="assets/images/logo.svg" alt="Logo" class="header__logo"></a>
+        </div>
+        <div class="header__menu-wrapper">
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Client</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header__burger-menu burger-menu">
+            <div class="burger-menu__area"></div>
+            <div class="burger-menu__lines">
+              <div class="burger-menu__line"></div>
+              <div class="burger-menu__line"></div>
+              <div class="burger-menu__line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <main class="main">Main</main>
     <footer class="footer">Footer</footer>
   </div>
