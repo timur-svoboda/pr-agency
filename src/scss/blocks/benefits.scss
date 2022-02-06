@@ -38,12 +38,6 @@
   }
   &__title {
     max-width: 638px;
-    @media (max-width: $xs) {
-      font-size: calc(0.0547 * 100vw + 53px/2);
-    }
-    @media (max-width: $xxs) {
-      font-size: 44px;
-    }
   }
   &__content {
     @extend %grid;
@@ -74,6 +68,4 @@
   }
   &__desc {
   }
-}
-.title {
 }

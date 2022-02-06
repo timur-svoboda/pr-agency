@@ -1,0 +1,15 @@
+.section-top {
+  display: flex;
+  @media (max-width: $md) {
+    flex-wrap: wrap;
+  }
+  &__title {
+    flex: 1 1 auto;
+    @media (max-width: $md) {
+      margin-bottom: 20px;
+    }
+  }
+  &__arrow-link-wrapper {
+    padding: 9px 0;
+  }
+}

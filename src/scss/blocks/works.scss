@@ -1,0 +1,27 @@
+.works {
+  padding: 160px 0;
+  background-color: $gray;
+  @media (max-width: $md) {
+    padding: 80px 0;
+  }
+  &__container {
+    @extend %container;
+  }
+  &__top {
+    margin-bottom: 64px;
+  }
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    @media (max-width: $sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: $xs) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
