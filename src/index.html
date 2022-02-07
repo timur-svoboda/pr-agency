@@ -157,7 +157,7 @@
 
       <section class="benefits">
         <div class="benefits__bg">
-          <img src="assets/images/benefits/bg.svg" alt="Benefits backgorund" class="benefits__bg-image">
+          <img src="assets/images/benefits/bg.svg" alt="Benefits backgorund" class="benefits__bg-image lazyload">
           <div class="benefits__bg-gradient"></div>
         </div>
         <div class="benefits__container">
@@ -227,8 +227,8 @@
             <a href="#" class="work__link">
               <div class="work__bg">
                 <picture>
-                  <source srcset="assets/images/works/automax@4x.webp" type="image/webp">
-                  <img src="assets/images/works/automax@4x.jpg" alt="AutoMax image" class="work__bg-image">
+                  <source data-srcset="assets/images/works/automax@4x.webp" type="image/webp">
+                  <img data-src="assets/images/works/automax@4x.jpg" alt="AutoMax image" class="work__bg-image lazy">
                 </picture>
                 <div class="work__bg-gradient"></div>
               </div>
@@ -242,8 +242,8 @@
             <a href="#" class="work__link">
               <div class="work__bg">
                 <picture>
-                  <source srcset="assets/images/works/chic@4x.webp" type="image/webp">
-                  <img src="assets/images/works/chic@4x.jpg" alt="Chic image" class="work__bg-image">
+                  <source data-srcset="assets/images/works/chic@4x.webp" type="image/webp">
+                  <img data-src="assets/images/works/chic@4x.jpg" alt="Chic image" class="work__bg-image lazy">
                 </picture>
                 <div class="work__bg-gradient"></div>
               </div>
@@ -257,8 +257,8 @@
             <a href="#" class="work__link">
               <div class="work__bg">
                 <picture>
-                  <source srcset="assets/images/works/asimo@4x.webp" type="image/webp">
-                  <img src="assets/images/works/asimo@4x.jpg" alt="Asimo image" class="work__bg-image">
+                  <source data-srcset="assets/images/works/asimo@4x.webp" type="image/webp">
+                  <img data-src="assets/images/works/asimo@4x.jpg" alt="Asimo image" class="work__bg-image lazy">
                 </picture>
                 <div class="work__bg-gradient"></div>
               </div>
@@ -272,8 +272,8 @@
             <a href="#" class="work__link">
               <div class="work__bg">
                 <picture>
-                  <source srcset="assets/images/works/bobbi-brown@4x.webp" type="image/webp">
-                  <img src="assets/images/works/bobbi-brown@4x.jpg" alt="Bobbi Brown image" class="work__bg-image">
+                  <source data-srcset="assets/images/works/bobbi-brown@4x.webp" type="image/webp">
+                  <img data-src="assets/images/works/bobbi-brown@4x.jpg" alt="Bobbi Brown image" class="work__bg-image lazy">
                 </picture>
                 <div class="work__bg-gradient"></div>
               </div>
@@ -287,8 +287,8 @@
             <a href="#" class="work__link">
               <div class="work__bg">
                 <picture>
-                  <source srcset="assets/images/works/product-con@4x.webp" type="image/webp">
-                  <img src="assets/images/works/product-con@4x.jpg" alt="#ProductCon image" class="work__bg-image">
+                  <source data-srcset="assets/images/works/product-con@4x.webp" type="image/webp">
+                  <img data-src="assets/images/works/product-con@4x.jpg" alt="#ProductCon image" class="work__bg-image lazy">
                 </picture>
                 <div class="work__bg-gradient"></div>
               </div>
@@ -302,8 +302,8 @@
             <a href="#" class="work__link">
               <div class="work__bg">
                 <picture>
-                  <source srcset="assets/images/works/weare@4x.webp" type="image/webp">
-                  <img src="assets/images/works/weare@4x.jpg" alt="WeAre image" class="work__bg-image">
+                  <source data-srcset="assets/images/works/weare@4x.webp" type="image/webp">
+                  <img data-src="assets/images/works/weare@4x.jpg" alt="WeAre image" class="work__bg-image lazy">
                 </picture>
                 <div class="work__bg-gradient"></div>
               </div>
@@ -393,6 +393,7 @@
     <footer class="footer">Footer</footer>
   </div>
 
+  <script src="assets/libs/vanilla-lazyload/lazyload.min.js"></script>
   <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>

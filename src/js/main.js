@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Lazyload
+  new LazyLoad({});
+
   // Burger
   const burger = document.querySelector(".burger-menu");
   
