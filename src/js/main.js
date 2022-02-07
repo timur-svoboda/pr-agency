@@ -10,4 +10,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector(".header__nav").classList.toggle("header__nav_open");
   });
+
+  // Swiper
+  new Swiper(".v-slider__slider", {
+    direction: "horizontal",
+    allowTouchMove: false,
+    // autoHeight: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      disabledClass: "v-slider__button_disabled",
+    },
+    breakpoints: {
+      576: {
+        direction: "vertical",
+      }
+    },
+    on: {
+      init: setSliderMaxHeight,
+      resize: setSliderMaxHeight
+    }
+  });
+
+  function setSliderMaxHeight(slider) {
+    const children = slider.slides.map(slide => Array.from(slide.children));
+    const heights = children.map(child => child.reduce((prev, cur) => prev + cur.offsetHeight, 0));
+    const maxHeight = Math.max(...heights);
+    slider.el.style.height = maxHeight + "px";
+    slider.update();
+  }
 });
