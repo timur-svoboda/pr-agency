@@ -72,6 +72,7 @@ body {
 }
 
 // Blocks
+@import "blocks/button.scss";
 @import "blocks/nav.scss";
 @import "blocks/burger-menu.scss";
 @import "blocks/title.scss";
@@ -81,6 +82,10 @@ body {
 @import "blocks/work.scss";
 @import "blocks/v-slider.scss";
 @import "blocks/slider-clients.scss";
+@import "blocks/contact-form.scss";
+@import "blocks/subscribe-form.scss";
+@import "blocks/footer-links.scss";
+@import "blocks/social.scss";
 
 // Sections
 @import "blocks/header.scss";
@@ -91,3 +96,5 @@ body {
 @import "blocks/works.scss";
 @import "blocks/testimonials.scss";
 @import "blocks/clients.scss";
+@import "blocks/contact.scss";
+@import "blocks/footer.scss";
