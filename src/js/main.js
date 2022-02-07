@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
   new Swiper(".v-slider__slider", {
     direction: "horizontal",
     allowTouchMove: false,
-    // autoHeight: true,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -42,4 +41,13 @@ document.addEventListener("DOMContentLoaded", () => {
     slider.el.style.height = maxHeight + "px";
     slider.update();
   }
+
+  // Clients Slider
+  const clientsSlider = new Swiper(".slider-clients__slider", {
+    navigation: {
+      nextEl: '.slider-clients__button_next',
+      prevEl: '.slider-clients__button_prev',
+      disabledClass: "slider-clients__button_disabled",
+    }
+  });
 });

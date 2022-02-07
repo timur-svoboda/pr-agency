@@ -7,10 +7,10 @@
   text-transform: capitalize;
   color: $black;
   @media (max-width: $xs) {
-    font-size: calc(0.0547 * 100vw + 53px/2);
+    font-size: calc(0.0625 * 100vw + 22px);
   }
   @media (max-width: $xxs) {
-    font-size: 44px;
+    font-size: 42px;
   }
   &__accent {
     color: $orange;

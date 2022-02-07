@@ -3,6 +3,7 @@ $black: #0A2042;
 $orange: #F87556;
 $white: #FFFFFF;
 $gray: #F4F0ED;
+$dark-gray: #EAE5E1;
 
 $xxs: 320px;
 $xs: 575.98px;
@@ -79,6 +80,7 @@ body {
 @import "blocks/section-top.scss";
 @import "blocks/work.scss";
 @import "blocks/v-slider.scss";
+@import "blocks/slider-clients.scss";
 
 // Sections
 @import "blocks/header.scss";
@@ -88,3 +90,4 @@ body {
 @import "blocks/benefits.scss";
 @import "blocks/works.scss";
 @import "blocks/testimonials.scss";
+@import "blocks/clients.scss";
